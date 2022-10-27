@@ -1,5 +1,4 @@
 input.onButtonPressed(Button.A, function () {
-    music.playSoundEffect(music.createSoundEffect(WaveShape.Square, 500, 1, 255, 0, 400, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     if (Scroll == 1) {
         if (Close == 0) {
             led.plot(0, 2)
@@ -69,16 +68,6 @@ myImage = images.createBigImage(`
     `)
 myImage.showImage(0)
 basic.forever(function () {
-    if (Close2 == 1 && Scroll == 2) {
-        led.plot(3, 2)
-        led.plot(3, 3)
-        led.plot(3, 4)
-        led.plot(4, 2)
-        led.plot(4, 3)
-        led.plot(4, 4)
-    }
-})
-basic.forever(function () {
     if (Close == 1 && Scroll == 1) {
         led.plot(0, 2)
         led.plot(0, 3)
@@ -86,5 +75,15 @@ basic.forever(function () {
         led.plot(1, 2)
         led.plot(1, 3)
         led.plot(1, 4)
+    }
+})
+basic.forever(function () {
+    if (Close2 == 1 && Scroll == 2) {
+        led.plot(3, 2)
+        led.plot(3, 3)
+        led.plot(3, 4)
+        led.plot(4, 2)
+        led.plot(4, 3)
+        led.plot(4, 4)
     }
 })
