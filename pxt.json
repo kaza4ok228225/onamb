@@ -3,10 +3,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*",
-        "datalogger": "*",
-        "midi": "github:microsoft/pxt-midi#v2.2.0"
+        "radio": "*"
     },
     "files": [
         "main.blocks",
